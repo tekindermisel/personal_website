@@ -1,0 +1,25 @@
+baseURL: "https://tekinder.com/"
+title: "Mišel Tekinder | Front-End/UX Developer"
+
+permalinks:
+  post: /:title/
+
+params:
+  Subtitle: ""
+  AuthorName: "Mišel Tekinder"
+  GitHubUser: ""
+
+googleAnalytics: "UA-82095663-1"
+theme: 'mnma'
+defaultExtension: "html"
+paginate: 10
+
+publishDir: docs
+enableEmoji: true
+buildDrafts: false
+disablePathToLower: true
+summaryLength: 70
+watch: true
+uglyURLs: false
+disableSitemap: true
+# disableKinds: ["sitemaps"]
