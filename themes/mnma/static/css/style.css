@@ -27,24 +27,6 @@ section {
 /* #############################################################################
    #############################################################################
    
-    Base Styles
-*/
-
-h1, h2, h3, h4, h5, h6 {}
-
-p {}
-
-ul {}
-
-li {
-    list-style-type: none;
-}
-
-
-
-/* #############################################################################
-   #############################################################################
-   
     Header Styles
 */
 
@@ -55,54 +37,45 @@ li {
     align-items: center;
 }
 
-    .header > section { max-width: 70vw; }
+.header { justify-content: center; }
+
+    .header > section {padding: 0 1em;}
 
     .header__title {
+        font-size: 1.2rem;
         font-weight: 300;
         margin: 0 0 1em 0;
     }
 
     .header__subtitle {
+        font-size: 1.5rem;
         font-weight: 900;
         line-height: 1.2;
         margin: 0 0 1em 0;
     }
 
     .header__intro {
+        font-size: .8rem;
         line-height: 1.5;
         margin: 0;
         font-weight: 300;
     }
 
-
-/* @media all and (max-width: 1099px) {
-    .header { padding-left: 10%; }
-    .header > section { max-width: 950px; }
-    .header__title { font-size: 36px; }
-    .header__subtitle { font-size: 48px; }
-    .header__intro { font-size: 22px; }
-} */
-
 @media all and (max-width: 680px) {
-    .header { justify-content: center; }
-    .header > section { max-width: 80%; }
-    .header__title { font-size: 1.2rem; }
-    .header__subtitle { font-size: 1.5rem; }
-    .header__intro { font-size: 1rem; }
+    .header > section { max-width: 450px; }
 }
 
 @media all and (min-width: 681px) and (max-width: 1099px) {
-    .header { justify-content: center; }
-    .header > section { max-width: 80%; }
-    .header__title { font-size: 1.7rem; }
-    .header__subtitle { font-size: 2.2rem; }
-    .header__intro { font-size: 1.1rem; }
+    html { font-size: 22px; }
+    .header > section { max-width: 610px; }
 }
 
-@media all and (min-width: 1100px) {
-    .header { padding-left: 10vw; }
-    .header > section { max-width: 72vw; }
-    .header__title { font-size: 2.7vw; }
-    .header__subtitle { font-size: 3.9vw; }
-    .header__intro { font-size: 1.8vw; }
+@media all and (min-width: 1100px) and (max-width: 1400px) {
+    html { font-size: 26px; }
+    .header > section { max-width: 770px; }
+}
+
+@media all and (min-width: 1401px) {
+    html { font-size: 36px; }
+    .header > section { max-width: 1100px; }
 }
