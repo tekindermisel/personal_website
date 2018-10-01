@@ -5,7 +5,7 @@ permalinks:
   post: /:title/
 
 params:
-  Subtitle: ""
+  Subtitle: "Front-end/UX developer focused on performant responsive interfaces."
   AuthorName: "Mišel Tekinder"
   GitHubUser: ""
 

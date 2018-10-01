@@ -2,28 +2,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,700i,900" rel="stylesheet">
-      <link href="css/normalize.css" rel="stylesheet">
-      <link href="css/style.css" rel="stylesheet">
+      {{ partial "styles.html" . }}
       <!--
           Hello stranger, nice to meet you!
-          Drop an email to misel.tekinder@gmail.com to say hi! ;)
+          Drop an email to misel.tekinder at gmail to say hi! ;)
       -->
       <title>
         {{ block "title" . }}
           {{ .Site.Title }}
         {{ end }}
       </title>
-      <meta charset="utf-8" />
-      <meta name="description" content="Front-end/UX developer with passion for fast, interactive and responsive user interfaces." />
-      <meta name="author" content="{{ .Site.Params.AuthorName }}" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <!-- favicon -->
-      <link rel="shortcut icon" href="">
+      {{ partial "head.html" . }}
     </head>
   <body>
     {{ template "_internal/google_analytics.html" . }}
-    {{ block "header" . }}{{ end }}
+    <!-- {{ block "header" . }}{{ end }} -->
     {{ block "main" . }}{{ end }}
     {{ block "footer" . }}{{ end }}
   </body>
