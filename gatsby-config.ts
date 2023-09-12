@@ -18,13 +18,25 @@ const config: GatsbyConfig = {
       options: {
         "icon": "src/images/icon.png"
       }
-    }, "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
+    },
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         "name": "images",
         "path": "./src/images/"
       },
       __key: "images"
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Merriweather:300,400,700,700i,900`
+        ],
+        display: 'swap'
+      }
     }
   ]
 };

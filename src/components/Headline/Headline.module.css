@@ -1,0 +1,23 @@
+.headline {
+    /* margin-left: 50px; */
+}
+
+.headline__subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0 0 1em 0;
+}
+
+.headline__title {
+    font-size: 39px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin: 0 0 1em 0;
+}
+
+.headline__description {
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+    font-weight: 300;
+}
