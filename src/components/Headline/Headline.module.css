@@ -1,5 +1,6 @@
 .headline {
     /* margin-left: 50px; */
+    /* color: #dbedf3; */
 }
 
 .headline__subtitle {
@@ -9,8 +10,8 @@
 }
 
 .headline__title {
-    font-size: 39px;
-    font-weight: 900;
+    font-family: 'Sofia Pro Bold';
+    font-size: 40px;
     line-height: 1.2;
     margin: 0 0 1em 0;
 }
@@ -20,4 +21,11 @@
     line-height: 1.5;
     margin: 0;
     font-weight: 300;
+}
+
+.headline__description + .headline__description { margin-top: .5em; }
+
+.headline__description a {
+    color: #000000;
+    text-decoration: underline;
 }
