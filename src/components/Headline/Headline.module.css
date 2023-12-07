@@ -1,19 +1,18 @@
 .headline {
-    /* margin-left: 50px; */
-    /* color: #dbedf3; */
+    max-width: 640px;
 }
 
 .headline__subtitle {
     font-size: 18px;
     font-weight: 300;
-    margin: 0 0 1em 0;
+    margin: 0 0 1rem 0;
 }
 
 .headline__title {
     font-family: 'Sofia Pro Bold';
     font-size: 40px;
     line-height: 1.2;
-    margin: 0 0 1em 0;
+    margin: 0 0 1rem 0;
 }
 
 .headline__description {
@@ -23,9 +22,4 @@
     font-weight: 300;
 }
 
-.headline__description + .headline__description { margin-top: .5em; }
-
-.headline__description a {
-    color: #000000;
-    text-decoration: underline;
-}
+.headline__description + .headline__description { margin-top: .5rem; }

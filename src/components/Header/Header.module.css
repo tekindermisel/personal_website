@@ -1,10 +1,21 @@
 .header {
+  display: flex;
+  align-items: center;
   padding: 20px 0 20px 100px;
 }
 
+.header > *:not(:first-child) {
+  margin-left: 10px;
+}
+
 .header__logo {
+  display: inline-block;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   overflow: hidden;
+}
+
+.header__link {
+  text-decoration: none;
 }

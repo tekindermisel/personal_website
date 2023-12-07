@@ -6,6 +6,7 @@ import type { HeadProps, PageProps } from "gatsby";
 import SEO from "../components/SEO";
 import Header from "../components/Header";
 import Headline from "../components/Headline";
+import Blogs from "../components/Blogs";
 import Footer from "../components/Footer";
 
 // Template
@@ -15,6 +16,7 @@ const IndexPage = (props: PageProps) => {
       <Header />
       <main>
         <Headline />
+        {/* <Blogs /> */}
       </main>
       <Footer />
     </>
@@ -25,5 +27,5 @@ export default IndexPage;
 
 
 export const Head = (props: HeadProps) => {
-  <SEO title={'Front-end Tech Lead | Mišel Tekinder'}></SEO>
+  return <SEO title={'Front-end Tech Lead Consultant | Mišel Tekinder'}></SEO>;
 };

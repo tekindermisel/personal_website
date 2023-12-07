@@ -19,6 +19,22 @@ const config: GatsbyConfig = {
         "icon": "src/images/misel-tekinder.png"
       }
     },
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          formats: [`webp`],
+          placeholder: `none`,
+          quality: 50,
+          // backgroundColor: `transparent`,
+          // blurredOptions: {},
+          // jpgOptions: {},
+          // pngOptions: {},
+          // webpOptions: {},
+          // avifOptions: {},
+        },
+      },
+    },
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {

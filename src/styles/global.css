@@ -42,5 +42,9 @@ section {
 main {
   padding-left: 100px;
   padding-top: 200px;
-  max-width: 640px;
+}
+
+a {
+  color: #000000;
+  text-decoration: underline;
 }

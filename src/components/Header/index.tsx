@@ -11,11 +11,15 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      <Link to={'/'}>
-        <div className={styles.header__logo}>
-          <StaticImage src={'./../../images/misel-tekinder.png'} alt={''} />
-        </div>
+      <Link to={'/'} className={styles.header__logo}>
+        <StaticImage src={'./../../images/misel-tekinder.png'} alt={''} />
       </Link>
+      {/* <span>/</span>
+      <Link to={'/'} className={styles.header__link}>Services</Link>
+      <span>/</span>
+      <Link to={'/'} className={styles.header__link}>Mentorship</Link>
+      <span>/</span>
+      <Link to={'/'} className={styles.header__link}>Training</Link> */}
     </header>
   )
 };
