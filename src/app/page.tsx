@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Mišel Tekinder | Product engineer',
-  description: 'I helping businesses build digital products utilizing modern technology.'
+  description: 'I help businesses build digital products utilizing modern technology.'
 }
 
 // Template
@@ -15,7 +15,7 @@ export default function Home() {
     <div className="font-[family-name:var(--font-inter)]">
       <main className="mt-40 flex justify-center px-4">
         
-        <div className="w-[460px] md:w-[600px] lg:w-[600px]">
+        <div className="w-[460px] md:w-[600px] lg:w-[600px] mb-8">
 
           <h1 className="lg:text-2xl">
             <strong className="block">Hello. 👋 I&#39;m Mišel</strong>
