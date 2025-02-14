@@ -6,8 +6,8 @@ const nextConfig: NextConfig = {
   /* config options here */
   reactStrictMode: true,
   output: "export",
-  assetPrefix: isProd ? '/your-repository-name/' : '',
-  basePath: isProd ? '/your-repository-name' : ''
+  assetPrefix: isProd ? '/personal_website/' : '',
+  basePath: isProd ? '/personal_website' : ''
 };
 
 export default nextConfig;
