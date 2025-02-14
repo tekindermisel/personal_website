@@ -1,10 +1,13 @@
 import type { NextConfig } from "next";
 
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig: NextConfig = {
   /* config options here */
-  distDir: 'docs',
+  reactStrictMode: true,
   output: "export",
-  basePath: "/docs",
+  assetPrefix: isProd ? '/your-repository-name/' : '',
+  basePath: isProd ? '/your-repository-name' : ''
 };
 
 export default nextConfig;
