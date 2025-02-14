@@ -7,7 +7,10 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   output: "export",
   assetPrefix: isProd ? '/personal_website/' : '',
-  basePath: isProd ? '/personal_website' : ''
+  basePath: isProd ? '/personal_website' : '',
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
