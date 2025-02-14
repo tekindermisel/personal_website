@@ -1,5 +1,6 @@
 // Dependency
 import type { Metadata } from 'next'
+import Link from 'next/link';
  
 
 export const metadata: Metadata = {
@@ -9,17 +10,18 @@ export const metadata: Metadata = {
 
 // Template
 export default function Home() {
+
   return (
-    // <div className="font-[family-name:var(--font-geist-mono)]">
     <div className="font-[family-name:var(--font-inter)]">
       <main className="mt-40 flex justify-center px-4">
         
         <div className="w-[460px] md:w-[600px] lg:w-[600px] .lg:w-[768px]">
 
-          <h1 className="lg:text-2xl"><strong>Hello. 👋 I'm Mišel</strong>, Product engineer.</h1>
+          <h1 className="lg:text-2xl"><strong>Hello. 👋 I&#39;m Mišel</strong>, Product engineer.</h1>
           <p className="md:text-2xl lg:text-3xl mt-4">I helping businesses build digital products utilizing modern technology.</p>
           <p className="md:text-lg lg:text-xl mt-4">Over the last decade as part of the outsourcing tech industry I helped large number of international brands from the industries such as edutech, fintech, retail and transportation build various digital products.</p>
           <p className="md:text-lg lg:text-xl mt-4">While doing that I lead teams and mentored great number of engineers, designed mentorship and developmant programs.</p>
+          <p className="md:text-lg lg:text-xl mt-4">Find me on <Link href="https://www.linkedin.com/in/miseltekinder/" target="_blank" className="underline">LinkedIn</Link> or over the <Link className="underline" href="mailto:mise@udrscr.studio">e-mail</Link>.</p>
 
         </div>
 
