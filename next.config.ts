@@ -6,8 +6,6 @@ const nextConfig: NextConfig = {
   /* config options here */
   reactStrictMode: true,
   output: "export",
-  assetPrefix: isProd ? '' : '',
-  basePath: isProd ? '' : '',
   images: {
     unoptimized: true,
   },
