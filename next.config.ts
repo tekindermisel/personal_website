@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   /* config options here */
   distDir: 'docs',
   output: "export",
-  basePath: "/personal_website",
+  basePath: "/docs",
 };
 
 export default nextConfig;
